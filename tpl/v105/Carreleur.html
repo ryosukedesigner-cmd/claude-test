@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{BUSINESS_NAME}} · Carreleur à {{CITY}}</title>
+<meta name="description" content="{{BUSINESS_NAME}}, carreleur à {{CITY}} : pose de carrelage, salle de bain, terrasse et extérieur. Devis clair, intervention soignée. Appelez-nous.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="{{BUSINESS_NAME}} · Carreleur à {{CITY}}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "{{BUSINESS_NAME}}", "telephone": "{{PHONE_FMT}}", "url": "https://{{SUB}}.biz-boost.fr/", "address": {"@type": "PostalAddress", "addressLocality": "{{CITY}}", "addressCountry": "FR"}, "areaServed": {"@type": "City", "name": "{{CITY}}"}, "description": "Carreleur à {{CITY}} : pose de carrelage, salle de bain, terrasse et extérieur, mosaïque, rénovation de sol, plinthes et finitions.", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Carreleur", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pose de carrelage", "description": "Sols et murs, grands formats, imitation parquet ou pierre."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Salle de bain", "description": "Douche à l'italienne, crédence, faïence et étanchéité soignée."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Terrasse et extérieur", "description": "Carrelage et dalles extérieures, pose sur plots ou collée."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mosaïque", "description": "Mosaïque décorative, motifs et calepinage sur mesure."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rénovation de sol", "description": "Dépose, ragréage et pose sur support sain."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plinthes et finitions", "description": "Joints, plinthes, nez de marche et raccords propres."}}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Intervenez-vous à {{CITY}} ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, {{BUSINESS_NAME}} intervient à {{CITY}} et dans les communes voisines. Appelez-nous pour votre projet."}}, {"@type": "Question", "name": "Pouvez-vous poser des grands formats ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, avec la préparation du support et le matériel adaptés aux grands carreaux."}}, {"@type": "Question", "name": "Fournissez-vous le carrelage ?", "acceptedAnswer": {"@type": "Answer", "text": "Selon votre choix : nous pouvons vous conseiller sur le matériau ou poser celui que vous avez sélectionné."}}, {"@type": "Question", "name": "Le devis est-il gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Contactez-nous : nous passons voir le chantier et vous remettons un devis détaillé."}}]}</script>
+<style>
+:root{--acc-on:#fff;--acc-hi:#9be8dc;--acc:#0e7c86;--acc-ink:#0b646c;--acc-soft:#e2f3f4;--ink:#14171c;--ink2:#4a5260;--ink3:#7b8494;--line:#e7e9ee;--bg:#ffffff;--bg2:#f6f5f2;--r:22px;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Inter Tight",Inter,sans-serif;letter-spacing:-.025em;line-height:1.06;font-weight:700}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc-ink)}
+.eyebrow:before{content:"";width:18px;height:2px;background:var(--acc);border-radius:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .15s,box-shadow .15s,background .15s;white-space:nowrap}
+.btn svg{width:19px;height:19px}
+.btn-p{background:var(--acc);color:var(--acc-on,#fff);box-shadow:0 10px 24px -10px var(--acc)}
+.btn-p:hover{transform:translateY(-1px);box-shadow:0 14px 30px -12px var(--acc)}
+.btn-s{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-s:hover{border-color:#cfd3db}
+/* header */
+.hd{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
+.hd.sc{border-color:var(--line)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.mono{width:42px;height:42px;border-radius:12px;background:var(--ink);color:#fff;display:grid;place-items:center;font:700 19px "Inter Tight",sans-serif;flex:none}
+.brand .logo{height:42px;width:auto;max-width:150px;object-fit:contain;flex:none}
+.brand b{display:block;font:700 18px/1.1 "Inter Tight",sans-serif;letter-spacing:-.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:280px}
+.brand small{display:block;font-size:12.5px;color:var(--ink3);margin-top:2px}
+.nav{display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:var(--ink2)}
+.nav a:hover{color:var(--ink)}
+.nav .btn{height:44px;padding:0 20px;font-size:15px}
+/* hero */
+.hero{padding:14px 0 0}
+.hero-c{position:relative;border-radius:30px;overflow:hidden;background:var(--bg2);display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:76px 60px 104px}
+.hero-c:before{content:"";position:absolute;right:-160px;top:-200px;width:620px;height:620px;border-radius:50%;background:radial-gradient(closest-side,var(--acc-soft),rgba(255,255,255,0));opacity:.9}
+.hero-c:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(20,23,28,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(20,23,28,.045) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 70% 30%,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 30%,#000 10%,transparent 70%)}
+.hero-t{position:relative;z-index:1}
+.hero h1{font-size:clamp(42px,5.6vw,76px);margin:18px 0 20px;letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--acc-ink)}
+.lead{font-size:19px;color:var(--ink2);max-width:560px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero-card{position:relative;z-index:1;background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 40px 80px -40px rgba(20,23,28,.35)}
+.hc-top{display:flex;align-items:center;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.hc-top b{display:block;font:700 17px/1.2 "Inter Tight",sans-serif}
+.hc-top span{font-size:13px;color:var(--ink3)}
+.hc-top em{margin-left:auto;font-style:normal;font-size:12px;font-weight:600;color:var(--acc-ink);background:var(--acc-soft);padding:6px 10px;border-radius:999px;white-space:nowrap}
+.hc-list{list-style:none;display:grid;gap:16px;padding:20px 0 22px}
+.hc-list li{display:flex;gap:12px}
+.hc-list i{width:34px;height:34px;border-radius:10px;background:var(--acc-soft);color:var(--acc-ink);display:grid;place-items:center;flex:none}
+.hc-list i svg{width:17px;height:17px}
+.hc-list b{display:block;font-size:15px;line-height:1.3}
+.hc-list span{display:block;font-size:13.5px;color:var(--ink3);line-height:1.45;margin-top:2px}
+.hero-card .btn{width:100%}
+.hero-card .hc-q{display:none}
+.no-phone .hero-card .hc-q{display:flex}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:-46px 40px 0;position:relative;z-index:2;background:#fff;border-radius:22px;box-shadow:0 30px 70px -30px rgba(20,23,28,.35);border:1px solid var(--line)}
+.trust>div{display:flex;gap:14px;align-items:center;padding:22px 24px;border-left:1px solid var(--line)}
+.trust>div:first-child{border-left:0}
+.trust i{width:42px;height:42px;border-radius:12px;background:var(--acc-soft);color:var(--acc-ink);display:grid;place-items:center;flex:none}
+.trust svg{width:21px;height:21px}
+.trust b{display:block;font-size:15.5px;color:var(--ink)}
+.trust span{font-size:13.5px;color:var(--ink3);line-height:1.4}
+/* sections */
+.sec{padding:110px 0}
+.sec-h{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:54px}
+.sec-h h2{font-size:clamp(32px,3.8vw,48px);max-width:640px;margin-top:14px}
+.sec-h p{max-width:400px;color:var(--ink2)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 22px 50px -26px rgba(20,23,28,.28);border-color:#dfe2e8}
+.card .n{width:46px;height:46px;border-radius:13px;background:var(--acc-soft);color:var(--acc-ink);display:grid;place-items:center;font:700 16px "Inter Tight",sans-serif;margin-bottom:22px}
+.card h3{font-size:21px;margin-bottom:10px}
+.card p{font-size:15.5px;color:var(--ink2)}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.split img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;border-radius:28px}
+.split h2{font-size:clamp(32px,3.8vw,46px);margin:14px 0 20px}
+.split>div>p{color:var(--ink2);font-size:18px}
+.ticks{list-style:none;display:grid;gap:22px}
+.ticks li{display:flex;gap:14px}
+.ticks i{width:28px;height:28px;border-radius:50%;background:var(--acc);color:var(--acc-on,#fff);display:grid;place-items:center;flex:none;margin-top:1px}
+.ticks i svg{width:15px;height:15px}
+.ticks b{display:block;font-size:17px}
+.ticks span{color:var(--ink2);font-size:15.5px}
+/* gallery */
+.dark{background:#111418;color:#fff}
+.dark .eyebrow{color:var(--acc)}
+.dark .sec-h p{color:#a9b0bc}
+.gal{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:260px 260px;gap:16px}
+.gal figure{position:relative;overflow:hidden;border-radius:var(--r)}
+.gal figure:first-child{grid-row:span 2}
+.gal.n2{grid-template-columns:1fr 1fr;grid-template-rows:380px}
+.gal.n2 figure:first-child{grid-row:auto}
+.gal.n1{grid-template-columns:1fr;grid-template-rows:460px}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:16px;bottom:16px;background:rgba(17,20,24,.72);backdrop-filter:blur(8px);padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{padding:34px 30px;border-radius:var(--r);background:var(--bg2);position:relative}
+.step:before{counter-increment:s;content:"0" counter(s);font:700 15px "Inter Tight",sans-serif;color:var(--acc-ink);display:block;margin-bottom:40px}
+.step h3{font-size:22px;margin-bottom:10px}
+.step p{color:var(--ink2);font-size:15.5px}
+/* zone */
+.zone{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.zone-c{border-radius:28px;background:var(--acc-soft);padding:46px;display:flex;flex-direction:column;justify-content:space-between;min-height:340px}
+.zone-c h2{font-size:clamp(30px,3.4vw,42px)}
+.zone-c p{color:var(--ink2);margin-top:14px;max-width:420px}
+.zone-map{border-radius:28px;overflow:hidden;position:relative;min-height:340px;background:#e9edf2}
+.zone-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35)}
+/* faq */
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line);padding:24px 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font:600 19px/1.35 "Inter Tight",sans-serif;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{font-style:normal;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:transform .2s;font-size:18px;color:var(--ink2)}
+.faq details[open] summary i{transform:rotate(45deg)}
+.faq details p{color:var(--ink2);margin-top:12px;max-width:720px}
+/* final */
+.final{padding:0 0 110px}
+.final-c{border-radius:32px;background:#111418;color:#fff;padding:72px 64px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.final-c:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:var(--acc);opacity:.16;filter:blur(10px)}
+.final-c h2{font-size:clamp(32px,3.8vw,48px)}
+.final-c p{color:#a9b0bc;margin-top:16px;font-size:18px}
+.final-c .cta{justify-content:flex-end;margin:0;position:relative;z-index:1}
+.final-c .btn-s{background:transparent;color:#fff;border-color:#3a4049}
+.ft{border-top:1px solid var(--line);padding:34px 0 120px;font-size:14px;color:var(--ink3)}
+.ft .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+/* mobile call bar */
+.mbar{display:none}
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+.no-phone [data-phone]{display:none!important}
+@media (max-width:980px){
+ .nav a:not(.btn){display:none}
+ .split,.zone,.final-c{grid-template-columns:1fr}
+ .hero-c{grid-template-columns:1fr;padding:48px 36px 96px;gap:36px}
+ .trust{grid-template-columns:1fr 1fr;margin:-40px 20px 0}
+ .trust>div:nth-child(3){border-left:0}
+ .trust>div:nth-child(n+3){border-top:1px solid var(--line)}
+ .grid3,.steps{grid-template-columns:1fr 1fr}
+ .sec{padding:80px 0}
+ .sec-h{flex-direction:column;align-items:start;gap:16px;margin-bottom:38px}
+ .final-c{padding:48px 32px}
+ .final-c .cta{justify-content:flex-start}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .wrap{padding:0 20px}
+ .hd .wrap{height:64px}
+ .nav .btn{display:none}
+ .brand .logo{height:42px;width:auto;max-width:150px;object-fit:contain;flex:none}
+.brand b{max-width:230px;font-size:17px}
+ .hero{padding:8px 0 0}.hero .wrap{padding:0 10px}
+ .hero-c{border-radius:24px;padding:30px 20px 34px}
+ .hero-card{padding:18px}
+ .hero-card .btn{display:none}
+ .hero-t .btn-s{display:none}
+ .hero h1{font-size:42px;margin:12px 0 14px}
+ .lead{font-size:16.5px}
+ .cta{margin-top:24px}.cta .btn{flex:1 1 100%}
+ .trust{margin:14px 10px 0;grid-template-columns:1fr 1fr;box-shadow:none}
+ .trust>div{padding:16px 14px;gap:10px;flex-direction:column;align-items:flex-start}
+ .trust i{width:36px;height:36px}
+ .grid3,.steps{grid-template-columns:1fr}
+ .card{padding:26px}
+ .gal{grid-template-columns:1fr;grid-template-rows:260px 200px 200px}
+ .gal figure:first-child{grid-row:auto}
+ .zone-c{padding:32px;min-height:0}
+ .zone-map{min-height:260px}
+ .split{gap:36px}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+ .mbar .btn{flex:1;height:50px;font-size:15.5px}
+ .no-phone .mbar .btn-s{background:var(--acc);color:var(--acc-on,#fff);border:0}
+}
+</style>
+<link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/hero-m.webp" media="(max-width:820px)" fetchpriority="high"><link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/hero-d.webp" media="(min-width:821px)"><style id="cx-css">
+:root{--cx-dark:#0d0f12;--cx-cream:#f4f1ea}
+.cx{background:var(--bg)}
+.cx .rv{opacity:1;transform:none}
+/* en-tête transparent sur la scène d'ouverture */
+.cx .hd{position:fixed;left:0;right:0;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;color:#fff;transition:background .35s,color .35s,border-color .35s}
+.cx .hd .brand small{color:rgba(255,255,255,.75)}
+.cx .hd .nav a:not(.btn){color:rgba(255,255,255,.85)}
+.cx .hd.sc{background:rgba(13,15,18,.72);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);border-color:rgba(255,255,255,.08)}
+.cx .hd .mono{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.cx .hd .brand .logo{background:#fff;border-radius:10px;padding:3px}
+[data-cx]{--p:1}
+/* scène 1 */
+.cx-hero{position:relative;height:100svh;min-height:600px;overflow:hidden;background:var(--cx-dark);color:#fff;display:flex;align-items:flex-end}
+.cx-media{position:absolute;inset:0;transform:scale(calc(1.02 + var(--p)*.16)) translateY(calc(var(--p)*6%));will-change:transform}
+.cx-media img,.cx-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cx-media video{opacity:0;transition:opacity 1.2s ease}.cx-media video.on{opacity:1}
+.cx-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,9,11,.55) 0%,rgba(8,9,11,0) 26%,rgba(8,9,11,.15) 48%,rgba(8,9,11,.88) 100%);opacity:calc(.9 + var(--p)*.3)}
+.cx-hero-c{position:relative;z-index:2;width:100%;padding-bottom:max(54px,8svh);transform:translateY(calc(var(--p)*-90px));opacity:calc(1 - var(--p)*1.5)}
+.cx-kick{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.cx-kick:before{content:"";width:26px;height:1px;background:var(--acc-hi,#fff)}
+.cx-hero h1{font-size:clamp(46px,7.4vw,104px);line-height:.98;letter-spacing:-.04em;margin:16px 0 18px;max-width:900px;text-wrap:balance}
+.cx-hero h1 em{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-.02em;color:var(--acc-hi,#fff)}
+.cx-hero .lead{color:rgba(255,255,255,.86);font-size:18px;max-width:580px}
+.cx-hero .cta{margin-top:28px}
+.cx-hero .btn-s{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.35);backdrop-filter:blur(8px)}
+.cx-hero .bbnote{color:rgba(255,255,255,.9)}
+.cx-cue{position:absolute;right:24px;bottom:28px;z-index:3;width:26px;height:42px;border:1.5px solid rgba(255,255,255,.6);border-radius:14px;opacity:calc(1 - var(--p)*4)}
+.cx-cue span{position:absolute;left:50%;top:8px;width:3px;height:8px;margin-left:-1.5px;border-radius:2px;background:#fff;animation:cxcue 1.8s infinite}
+@keyframes cxcue{0%{transform:translateY(0);opacity:1}80%{transform:translateY(14px);opacity:0}100%{opacity:0}}
+.cx-hero-c>*{animation:cxin 1.1s cubic-bezier(.2,.7,.1,1) both}
+.cx-hero-c>*:nth-child(2){animation-delay:.12s}.cx-hero-c>*:nth-child(3){animation-delay:.24s}.cx-hero-c>*:nth-child(4){animation-delay:.36s}.cx-hero-c>*:nth-child(5){animation-delay:.48s}
+@keyframes cxin{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.cx-media img.cx-poster{animation:cxzoom 2.4s cubic-bezier(.2,.7,.1,1) both}
+@keyframes cxzoom{from{transform:scale(1.12);filter:brightness(.6)}to{transform:none;filter:none}}
+.cx-media:not(:has(video)) img.cx-poster{animation:cxzoom 2.4s cubic-bezier(.2,.7,.1,1) both,cxkb 24s ease-in-out 2.4s infinite alternate}
+@keyframes cxkb{from{transform:none}to{transform:scale(1.09) translate(-1.5%,-1%)}}
+/* bandeau défilant */
+.cx-marq{background:var(--cx-dark);color:#fff;overflow:hidden;border-top:1px solid rgba(255,255,255,.08);padding:16px 0}
+.cx-marq>div{display:flex;gap:28px;width:max-content;animation:cxmarq 34s linear infinite;white-space:nowrap;font-size:14.5px;color:rgba(255,255,255,.72)}
+.cx-marq b{color:#fff;font-weight:600}.cx-marq i{font-style:normal;color:var(--acc-hi,#fff)}
+@keyframes cxmarq{to{transform:translateX(-50%)}}
+/* scène 2 : récit épinglé */
+.cx-story{height:300svh;background:var(--cx-dark);position:relative}
+.cx-pin{position:sticky;top:0;height:100svh;overflow:hidden}
+.cx-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(calc(1.18 - var(--p)*.16));filter:saturate(calc(.7 + var(--p)*.4))}
+.cx-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,9,11,.35),rgba(8,9,11,.82))}
+.cx-lines{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;gap:6px;color:#fff}
+.cx-eye{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:18px}
+.cx-l{--k:clamp(0,calc((var(--p) - var(--a))*7),1);font:700 clamp(34px,5.4vw,72px)/1.04 "Inter Tight",sans-serif;letter-spacing:-.035em;opacity:calc(.08 + var(--k)*.92);transform:translateY(calc((1 - var(--k))*26px));filter:blur(calc((1 - var(--k))*6px))}
+.cx-l-end{font:italic 500 clamp(24px,3.4vw,40px)/1.2 Fraunces,Georgia,serif;letter-spacing:-.01em;color:var(--acc-hi,#fff);margin-top:22px;max-width:760px}
+.cx-bar{position:absolute;left:24px;right:24px;bottom:30px;height:2px;background:rgba(255,255,255,.15);z-index:2}
+.cx-bar i{display:block;height:100%;background:var(--acc-hi,#fff);transform-origin:left;transform:scaleX(var(--p))}
+/* scène 3 : le geste */
+.cx-gest-c{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.cx-reveal{border-radius:28px;overflow:hidden;aspect-ratio:4/5;clip-path:inset(calc((1 - clamp(0,var(--p)*2.2,1))*14%) round 28px)}
+.cx-reveal img{width:100%;height:118%;object-fit:cover;transform:translateY(calc(var(--p)*-14%))}
+.cx-gest h2{font-size:clamp(32px,3.8vw,48px);margin:14px 0 18px;text-wrap:balance}
+.cx-gest p{color:var(--ink2);font-size:18px;margin-bottom:30px}
+/* scène 4 : avant / après */
+.cx-ba{height:260svh;background:var(--cx-cream)}
+.cx-ba-pin{display:flex;flex-direction:column;justify-content:center;gap:22px;padding:84px 0 30px}
+.cx-ba-h h2{font-size:clamp(30px,4vw,52px);margin-top:12px;text-wrap:balance}
+.cx-ba-f{--q:clamp(0,calc((var(--p) - .12)*1.45),1);position:relative;margin:0 auto;width:min(calc(100% - 40px),560px,calc((100svh - 300px)*.8));aspect-ratio:4/5;border-radius:24px;overflow:hidden;box-shadow:0 50px 90px -50px rgba(20,23,28,.55);touch-action:pan-y}
+.cx-ba-f img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cx-after{clip-path:inset(0 calc((1 - var(--q))*100%) 0 0)}
+.cx-handle{position:absolute;top:0;bottom:0;left:calc(var(--q)*100%);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 18px rgba(0,0,0,.4)}
+.cx-handle:after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;font:700 16px "Inter Tight",sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.cx-tag{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font-size:12.5px;font-weight:600;letter-spacing:.04em;background:rgba(13,15,18,.7);color:#fff;backdrop-filter:blur(6px)}
+.cx-tag-b{right:14px;opacity:calc(1 - var(--q)*1.4)}.cx-tag-a{left:14px;opacity:calc(var(--q)*1.4 - .2)}
+.cx-ba-c{text-align:center;font-size:13px;color:var(--ink3)}
+/* services */
+.cx-serv{background:var(--bg)}
+.cx-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cx-card{position:relative;padding:34px 30px 30px;border-radius:24px;background:var(--bg2);overflow:hidden;transition:transform .3s,box-shadow .3s}
+.cx-card:hover{transform:translateY(-4px);box-shadow:0 30px 60px -36px rgba(20,23,28,.4)}
+.cx-n{display:block;font:700 64px/1 "Inter Tight",sans-serif;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--acc);margin-bottom:26px}
+.cx-card h3{font-size:22px;margin-bottom:8px}.cx-card p{color:var(--ink2);font-size:15.5px}
+/* étapes */
+.cx-steps-c{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.cx-steps h2{font-size:clamp(32px,3.8vw,48px);margin-top:14px;text-wrap:balance}
+.cx-tl{position:relative;list-style:none;display:grid;gap:34px;padding-left:46px}
+.cx-tl:before{content:"";position:absolute;left:14px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.cx-tl-line{position:absolute;left:14px;top:6px;bottom:6px;width:2px;background:var(--acc);transform-origin:top;transform:scaleY(clamp(0,calc(var(--p)*1.7 - .25),1))}
+.cx-tl li{position:relative}
+.cx-tl li>span{position:absolute;left:-46px;top:0;width:30px;height:30px;border-radius:50%;background:var(--bg);border:2px solid var(--acc);color:var(--acc-ink);display:grid;place-items:center;font:700 11px "Inter Tight",sans-serif}
+.cx-tl h3{font-size:22px;margin-bottom:6px}.cx-tl p{color:var(--ink2)}
+/* zone */
+.cx-zone{position:relative;overflow:hidden;color:#fff;min-height:88svh;display:flex;align-items:flex-end;background:var(--cx-dark)}
+.cx-zbg{position:absolute;inset:-12% 0;width:100%;height:124%;object-fit:cover;transform:translateY(calc((var(--p) - .5)*-14%))}
+.cx-zveil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,9,11,.1),rgba(8,9,11,.82))}
+.cx-zone-c{position:relative;z-index:2;padding-bottom:70px;padding-top:120px}
+.cx-zone .eyebrow{color:#fff}.cx-zone .eyebrow:before{background:var(--acc-hi,#fff)}
+.cx-zone h2{font-size:clamp(34px,4.6vw,60px);margin:14px 0 14px;max-width:760px;text-wrap:balance}
+.cx-zone p{color:rgba(255,255,255,.82);max-width:520px;font-size:18px}
+.cx-zone .cta{margin-top:26px}
+/* final */
+.cx-final{position:relative;overflow:hidden;color:#fff;background:var(--cx-dark);padding:140px 0 120px}
+.cx-fbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(calc(1.15 - var(--p)*.15));opacity:.55}
+.cx-fveil{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(8,9,11,.4),rgba(8,9,11,.9))}
+.cx-final-c{position:relative;z-index:2;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.cx-final h2{font-size:clamp(36px,5vw,68px);text-wrap:balance}
+.cx-final p{color:rgba(255,255,255,.78);margin-top:16px;font-size:18px}
+.cx-final .cta{justify-content:flex-end}
+.cx-final .btn-s{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.cx .ft{padding-top:34px}
+/* apparitions */
+.cv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.1,1) var(--d,0ms),transform .9s cubic-bezier(.2,.7,.1,1) var(--d,0ms)}
+.cv.in{opacity:1;transform:none}
+html:not(.cx-js) .cv{opacity:1;transform:none}
+@media (max-width:980px){
+ .cx-gest-c,.cx-steps-c,.cx-final-c{grid-template-columns:1fr;gap:40px}
+ .cx-cards{grid-template-columns:1fr 1fr}
+ .cx-final .cta{justify-content:flex-start}
+}
+@media (max-width:640px){
+ .cx-hero{min-height:560px}
+ .cx-hero h1{font-size:clamp(42px,12.5vw,58px);margin:14px 0 14px}
+ .cx-hero .lead{font-size:16px}
+ .cx-hero-c{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
+ .cx-hero .cta{gap:10px;margin-top:22px}.cx-hero .cta .btn{height:50px}
+ .cx-hero .cta .btn-s{display:inline-flex}
+ .cx-cue{display:none}
+ .cx-story{height:260svh}
+ .cx-l{font-size:clamp(32px,10vw,44px)}
+ .cx-l-end{font-size:23px}
+ .cx-reveal{aspect-ratio:4/5;margin:0 -4px}
+ .cx-ba{height:230svh}
+ .cx-ba-pin{padding-top:76px;gap:18px}
+ .cx-ba-f{width:min(calc(100% - 32px),calc((100svh - 260px)*.8))}
+ .cx-cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:4px 20px 18px;scrollbar-width:none}
+ .cx-cards::-webkit-scrollbar{display:none}
+ .cx-card{flex:0 0 78%;scroll-snap-align:center;padding:28px 24px}
+ .cx-n{font-size:52px;margin-bottom:18px}
+ .cx-zone{min-height:78svh}
+ .cx-final{padding:100px 0 90px}
+}
+@media (prefers-reduced-motion:reduce){
+ [data-cx]{--p:1!important}
+ .cx-story,.cx-ba{height:auto}.cx-pin{position:relative}
+ .cx-marq>div,.cx-hero-c>*,.cx-media img.cx-poster,.cx-media:not(:has(video)) img.cx-poster,.cx-cue span{animation:none}
+ .cv{opacity:1;transform:none;transition:none}
+}
+</style></head>
+<body class="cx">
+<header class="hd" id="hd">
+ <div class="wrap">
+  <a href="#top" class="brand"><span class="mono" data-slot="logo">C</span><span><b>{{BUSINESS_NAME}}</b><small>Carreleur · {{CITY}}</small></span></a>
+  <nav class="nav"><a href="#services">Services</a><a href="#zone">Zone</a><a href="#faq">Questions</a>
+   <a class="btn btn-p" href="tel:{{PHONE_RAW}}" data-phone data-track="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>{{PHONE_FMT}}</a></nav>
+ </div>
+</header>
+<main id="top">
+<section class="cx-hero" data-cx="out">
+ <div class="cx-media">
+  <picture><source media="(min-width:821px)" srcset="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/hero-d.webp"><img class="cx-poster" src="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/hero-m.webp" alt="" fetchpriority="high" decoding="async"></picture>
+  
+ </div>
+ <div class="cx-shade"></div>
+ <div class="wrap cx-hero-c">
+  <span class="cx-kick">Carreleur à {{CITY}}</span>
+  <h1>Chaque carreau, <em>à sa place.</em></h1>
+  <p class="lead">Sols, murs, salles de bain et terrasses : une pose précise, des joints nets, des finitions qui se voient.</p>
+  <div class="cta">
+     <a class="btn btn-p" href="tel:{{PHONE_RAW}}" data-phone data-track="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Appeler {{PHONE_FMT}}</a>
+     <a class="btn btn-s" href="#contact" data-track="quote">Demander un devis gratuit</a>
+    </div>
+ </div>
+ <a class="cx-cue" href="#cx-story" aria-label="Découvrir"><span></span></a>
+</section>
+<div class="cx-marq" aria-hidden="true"><div><span><b>Travail garanti</b> Finitions contrôlées avec vous</span><i>✦</i><span><b>Devis gratuit</b> Clair, avant tout travaux</span><i>✦</i><span><b>Réponse rapide</b> Un appel suffit</span><i>✦</i><span><b>{{CITY}}</b> et communes voisines</span><i>✦</i><span><b>Travail garanti</b> Finitions contrôlées avec vous</span><i>✦</i><span><b>Devis gratuit</b> Clair, avant tout travaux</span><i>✦</i><span><b>Réponse rapide</b> Un appel suffit</span><i>✦</i><span><b>{{CITY}}</b> et communes voisines</span><i>✦</i></div></div>
+<section class="cx-story" id="cx-story" data-cx="pin">
+ <div class="cx-pin">
+  <img class="cx-bg" src="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/story.webp" alt="" loading="lazy" decoding="async">
+  <div class="cx-veil"></div>
+  <div class="wrap cx-lines"><span class="cx-eye">Ça commence souvent comme ça</span><p class="cx-l" style="--a:0.12">Un carreau qui sonne creux.</p><p class="cx-l" style="--a:0.32">Un joint qui noircit.</p><p class="cx-l" style="--a:0.52">Et l'eau qui s'infiltre sous la douche.</p><p class="cx-l cx-l-end" style="--a:0.72">Un carreleur qui prépare le support, puis pose au millimètre : c'est fait pour durer.</p></div>
+  <div class="cx-bar"><i></i></div>
+ </div>
+</section>
+<section class="sec cx-gest" data-cx="in">
+ <div class="wrap cx-gest-c">
+  <figure class="cx-reveal"><img src="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/gest.webp" alt="Pose d'un grand carreau sur colle peignée" loading="lazy" decoding="async"></figure>
+  <div><div class="cv"><span class="eyebrow">Pourquoi nous choisir</span><h2>Un artisan qui vous explique, puis qui fait bien.</h2><p>Chez {{BUSINESS_NAME}}, chaque intervention commence par un diagnostic clair et se termine par un chantier propre.</p></div><div class="cv" style="--d:120ms"><ul class="ticks">
+    <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Un prix annoncé, un prix tenu</b><span>Le devis détaillé est validé avec vous avant de commencer.</span></div></li>
+    <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Des matériaux de qualité</b><span>Des fournitures fiables, choisies pour durer.</span></div></li>
+    <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Un interlocuteur unique</b><span>La même personne du premier appel à la fin du chantier.</span></div></li>
+   </ul></div></div>
+ </div>
+</section>
+<section class="cx-ba" data-cx="pin">
+ <div class="cx-pin cx-ba-pin">
+  <div class="wrap cx-ba-h"><span class="eyebrow">Avant, après</span><h2>Le même espace, transformé.</h2></div>
+  <div class="cx-ba-f">
+   <img src="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/before.webp" alt="Salle de bain carrelée ancienne et abîmée, avant travaux" loading="lazy" decoding="async">
+   <img class="cx-after" src="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/after.webp" alt="Salle de bain en grands carreaux de pierre, après travaux" loading="lazy" decoding="async">
+   <span class="cx-tag cx-tag-b">Avant</span><span class="cx-tag cx-tag-a">Après</span>
+   <i class="cx-handle"></i>
+  </div>
+  <p class="cx-ba-c">Faites glisser ou continuez à défiler · illustration d'une rénovation de carrelage</p>
+ </div>
+</section>
+<section class="sec cx-serv" id="services">
+ <div class="wrap">
+  <div class="sec-h cv"><div><span class="eyebrow">Nos services</span><h2>Tout ce qu'un carreleur fait de mieux, à {{CITY}}.</h2></div><p>De la petite intervention au chantier complet, {{BUSINESS_NAME}} s'occupe de tout avec le même soin.</p></div>
+  <div class="cx-cards"><article class="cx-card cv" style="--d:0ms"><span class="cx-n">01</span><h3>Pose de carrelage</h3><p>Sols et murs, grands formats, imitation parquet ou pierre.</p></article><article class="cx-card cv" style="--d:90ms"><span class="cx-n">02</span><h3>Salle de bain</h3><p>Douche à l'italienne, crédence, faïence et étanchéité soignée.</p></article><article class="cx-card cv" style="--d:180ms"><span class="cx-n">03</span><h3>Terrasse et extérieur</h3><p>Carrelage et dalles extérieures, pose sur plots ou collée.</p></article><article class="cx-card cv" style="--d:0ms"><span class="cx-n">04</span><h3>Mosaïque</h3><p>Mosaïque décorative, motifs et calepinage sur mesure.</p></article><article class="cx-card cv" style="--d:90ms"><span class="cx-n">05</span><h3>Rénovation de sol</h3><p>Dépose, ragréage et pose sur support sain.</p></article><article class="cx-card cv" style="--d:180ms"><span class="cx-n">06</span><h3>Plinthes et finitions</h3><p>Joints, plinthes, nez de marche et raccords propres.</p></article></div>
+ </div>
+</section>
+<section class="sec dark" id="realisations" hidden>
+ <div class="wrap">
+  <div class="sec-h rv"><div><span class="eyebrow">Réalisations</span><h2>Vos réalisations, enfin mises en valeur.</h2></div><p>Quelques chantiers de {{BUSINESS_NAME}} à {{CITY}} et dans les environs.</p></div>
+  <div class="gal rv">
+   <figure><img data-slot="g1" alt="Réalisation de {{BUSINESS_NAME}} à {{CITY}}" loading="lazy"></figure>
+   <figure><img data-slot="g2" alt="Réalisation de {{BUSINESS_NAME}} à {{CITY}}" loading="lazy"></figure>
+   <figure><img data-slot="g4" alt="Réalisation de {{BUSINESS_NAME}} à {{CITY}}" loading="lazy"></figure>
+  </div>
+ </div>
+</section>
+<section class="sec cx-steps" data-cx="in">
+ <div class="wrap cx-steps-c">
+  <div class="cv"><span class="eyebrow">Comment ça se passe</span><h2>Simple, du premier appel à la fin du chantier.</h2></div>
+  <ol class="cx-tl"><i class="cx-tl-line"></i><li class="cv" style="--d:0ms"><span>01</span><div><h3>Vous nous appelez</h3><p>Vous décrivez votre besoin, nous fixons un rendez-vous à {{CITY}} qui vous arrange.</p></div></li><li class="cv" style="--d:120ms"><span>02</span><div><h3>Diagnostic et devis</h3><p>Nous regardons sur place, nous expliquons et vous recevez un devis clair.</p></div></li><li class="cv" style="--d:240ms"><span>03</span><div><h3>Travaux soignés</h3><p>L'intervention est réalisée proprement, puis contrôlée avec vous.</p></div></li></ol>
+ </div>
+</section>
+<section class="cx-zone" id="zone" data-cx="in">
+ <img class="cx-zbg" src="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/../couvreur/zone.webp" alt="" loading="lazy" decoding="async">
+ <div class="cx-zveil"></div>
+ <div class="wrap cx-zone-c"><div class="cv"><span class="eyebrow">Zone d'intervention</span><h2>Carreleur à {{CITY}} et dans les communes voisines.</h2><p>Basé à {{CITY}}, {{BUSINESS_NAME}} intervient rapidement dans toute l'agglomération.</p><div class="cta"><a class="btn btn-p" href="tel:{{PHONE_RAW}}" data-phone data-track="call">Vérifier ma disponibilité</a></div></div></div>
+</section>
+<section class="sec" id="faq" style="padding-top:0">
+ <div class="wrap">
+  <div class="sec-h rv"><div><span class="eyebrow">Questions fréquentes</span><h2>Vos questions, nos réponses.</h2></div></div>
+  <div class="faq rv"><details open><summary>Intervenez-vous à {{CITY}} ?<i>+</i></summary><p>Oui, {{BUSINESS_NAME}} intervient à {{CITY}} et dans les communes voisines. Appelez-nous pour votre projet.</p></details><details><summary>Pouvez-vous poser des grands formats ?<i>+</i></summary><p>Oui, avec la préparation du support et le matériel adaptés aux grands carreaux.</p></details><details><summary>Fournissez-vous le carrelage ?<i>+</i></summary><p>Selon votre choix : nous pouvons vous conseiller sur le matériau ou poser celui que vous avez sélectionné.</p></details><details><summary>Le devis est-il gratuit ?<i>+</i></summary><p>Contactez-nous : nous passons voir le chantier et vous remettons un devis détaillé.</p></details></div>
+ </div>
+</section>
+<section class="cx-final" id="contact" data-cx="in">
+ <img class="cx-fbg" src="https://cdn.jsdelivr.net/gh/ryosukedesigner-cmd/claude-test@a5008fc97d57f77c6f45c45be626d514b230d5a5/m/carreleur/hero-d.webp" alt="" loading="lazy" decoding="async">
+ <div class="cx-fveil"></div>
+ <div class="wrap cx-final-c cv"><div><h2>Un projet, une urgence ? Parlons-en.</h2><p>{{BUSINESS_NAME}}, carreleur à {{CITY}}. Devis gratuit et sans engagement.</p></div><div class="cta"><a class="btn btn-p" href="tel:{{PHONE_RAW}}" data-phone data-track="call">Appeler {{PHONE_FMT}}</a><a class="btn btn-s" href="mailto:?subject=Demande%20de%20devis" data-track="quote">Écrire un message</a></div></div>
+</section>
+</main>
+<footer class="ft"><div class="wrap"><span>© {{YEAR}} {{BUSINESS_NAME}} · Carreleur à {{CITY}}</span><span>Mentions légales</span></div></footer>
+<div class="mbar"><a class="btn btn-p" href="tel:{{PHONE_RAW}}" data-phone data-track="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Appeler</a><a class="btn btn-s" href="#contact" data-track="quote">Devis gratuit</a></div>
+<div id="bbr"><div class="wrap"><button type="button" id="bbro"><i></i><em class="bbr-d bb-c">Votre site est prêt, {{BUSINESS_NAME}} · 0 € pendant 14 jours, sans carte bancaire</em><em class="bbr-d bb-r">Votre nouveau site est prêt, {{BUSINESS_NAME}} · pensé pour sortir en tête sur « carreleur {{CITY}} »</em><em class="bbr-m bb-c">Votre site est prêt</em><em class="bbr-m bb-r">Votre nouveau site est prêt</em></button><a class="bbr-a" href="https://biz-boost.fr/souscrire?ref={{SUB}}" data-cta="haut"><em class="bbr-d">Activer mon site</em><em class="bbr-m">Activer</em> <b>→</b></a></div></div>
+<div id="bbp"><div class="bbp-r"><a class="btn btn-p" href="https://biz-boost.fr/souscrire?ref={{SUB}}" data-cta="dock">Activer mon site</a><button type="button" class="bbp-i" data-open><span class="bb-c">Détails</span><span class="bb-r">Comparer</span></button></div><small>0 € pendant 14 jours · sans carte bancaire · sans engagement</small></div>
+<div id="bbt" role="status" aria-live="polite"></div>
+<style>html:not([data-bb="refonte"]) .bb-r{display:none!important}html[data-bb="refonte"] .bb-c{display:none!important}</style>
+<style>
+#bbr .wrap{justify-content:space-between}
+#bbro{gap:9px}#bbro em{font-style:normal;overflow:hidden;text-overflow:ellipsis}.bbr-m{display:none}
+.bbr-a{flex:none;background:var(--acc);color:var(--acc-on,#fff);font:700 13px Inter,sans-serif;padding:7px 14px;border-radius:999px;text-decoration:none;white-space:nowrap}
+.bbr-a b{font-weight:700}
+#bbp{display:none}
+#bbt{position:fixed;left:16px;right:16px;bottom:118px;z-index:70;margin:0 auto;max-width:420px;background:#111418;color:#fff;font-size:14px;line-height:1.45;padding:12px 16px;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.3);opacity:0;transform:translateY(8px);transition:.25s;pointer-events:none}
+#bbt.on{opacity:1;transform:none}
+.bbs-a{margin:0 0 22px}.bbs-a .btn{width:100%}.bbs-a p{margin:8px 0 0;font-size:13px;color:var(--ink3);text-align:center;line-height:1.5}
+#bbw-b.btn-s{margin-top:10px}
+.bbr-a em{font-style:normal}
+.bbs-o .bbs-av{display:flex;margin:0;color:#fff;font-size:18px}
+#bbs:not(.on) .bbs-p{box-shadow:none}
+@media (max-width:900px){
+ .bbr-d{display:none}.bbr-m{display:inline}
+ #bbro{width:auto!important;justify-content:flex-start!important;min-width:0}
+ #bbp{display:block;position:fixed;left:0;right:0;bottom:0;z-index:61;background:#fff;border-top:1px solid var(--line);box-shadow:0 -10px 30px -12px rgba(0,0,0,.18);padding:10px 14px calc(8px + env(safe-area-inset-bottom))}
+ .bbp-r{display:flex;gap:10px}.bbp-r .btn{flex:1;height:50px;font-size:16px}
+ .bbp-i{flex:none;height:50px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font:600 14.5px Inter,sans-serif;color:var(--ink)}
+ #bbp small{display:block;text-align:center;font-size:12px;color:var(--ink3);margin-top:6px}
+ body{padding-bottom:96px}
+ #bbp.pulse .btn{animation:bbpp 1.4s ease 2}
+}
+@keyframes bbpp{0%,100%{transform:none}50%{transform:scale(1.03);box-shadow:0 0 0 6px var(--acc-soft)}}
+</style>
+<script>
+(function(){var p=document.getElementById("bbp"),t=document.getElementById("bbt"),o=document.getElementById("bbro"),h;
+function pv(){return p&&getComputedStyle(document.getElementById("bbr")).display!=="none"}
+function toast(m){t.textContent=m;t.classList.add("on");clearTimeout(h);h=setTimeout(function(){t.classList.remove("on")},4200)}
+p&&p.querySelector("[data-open]").addEventListener("click",function(){o&&o.click()});
+document.addEventListener("click",function(e){if(!pv())return;var a=e.target.closest&&e.target.closest("a");if(!a)return;var hr=a.getAttribute("href")||"";
+ if(hr.indexOf("tel:")===0){e.preventDefault();toast("C'est ici que vos clients vous appelleront, en un geste. Dans cet aperçu, le bouton composerait votre propre numéro.")}
+ else if(a.getAttribute("data-track")==="quote"&&a.closest(".mbar")){e.preventDefault();toast("Vos clients vous demanderont un devis ici. Activez votre site pour recevoir leurs demandes.")}},true);
+setTimeout(function(){if(pv()&&!document.hidden)p.classList.add("pulse")},20000);})();
+</script>
+<div id="bbs" aria-hidden="true"><div class="bbs-bg" data-close></div>
+ <aside class="bbs-p" role="dialog" aria-label="Votre futur site">
+  <button class="bbs-x" type="button" data-close aria-label="Fermer">×</button>
+  <span class="eyebrow">Aperçu réservé à {{BUSINESS_NAME}}</span>
+  <h3 class="bb-c">Des clients vous cherchent déjà à {{CITY}}.</h3><h3 class="bb-r">Sur « carreleur {{CITY}} », ce sont les premiers résultats qui reçoivent les appels.</h3>
+  <div class="bbs-a"><a class="btn btn-p" href="https://biz-boost.fr/souscrire?ref={{SUB}}" data-cta="panel_haut">Activer mon site, 0 € aujourd'hui</a><p>14 jours gratuits, sans carte bancaire. Si vous ne faites rien, l'essai s'arrête tout seul.</p></div>
+  <div class="bblo" id="bblo" data-offer="v1" hidden><b>Offre de lancement à {{CITY}}</b><span>Les 3 premiers artisans de la ville ont leur premier mois offert après l'essai, sans autre condition. <b id="bblo-n"></b></span></div>
+  <style>.bblo[hidden]{display:none!important}.bblo{margin:14px 0 18px;padding:12px 14px;border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:10px;font-size:14px;line-height:1.5;color:var(--ink2)}.bblo>b{display:block;color:var(--ink);font-size:14.5px;margin-bottom:2px}.bblo #bblo-n{color:var(--ink)}</style>
+  <script>(function(){var el=document.getElementById("bblo");if(!el||!window.fetch)return;fetch("https://gdzlcxskuhupymyxywzm.supabase.co/rest/v1/rpc/bb_launch_slots",{method:"POST",headers:{"Content-Type":"application/json",apikey:"sb_publishable_g8jVNOsNPCpAz61g34rKFQ_Z-TIXwsv"},body:JSON.stringify({p_sub:"{{SUB}}"})}).then(function(r){return r.ok?r.json():null}).then(function(n){n=parseInt(n,10);if(!(n>0))return;document.getElementById("bblo-n").textContent=n===1?"Il reste 1 place sur 3.":"Il reste "+n+" places sur 3.";el.hidden=false}).catch(function(){})})();</script>
+  <p class="bbs-l bb-c">Chaque jour, des particuliers tapent « carreleur {{CITY}} » sur leur téléphone et appellent l'un des premiers noms qu'ils voient. Ce site est construit pour que ce soit le vôtre.</p>
+  <p class="bbs-l bb-r">Avoir un site ne suffit pas : encore faut-il que Google le montre quand on cherche « carreleur {{CITY}} ». Celui-ci est construit pour ça, puis pour transformer chaque visite en appel. Voici où en est votre site actuel.</p>
+  {{SEO_CMP}}
+  <div class="gser"><small>Google · « carreleur {{CITY}} »</small><div class="gser-u"><span class="mono">C</span><div><b>{{BUSINESS_NAME}}</b><span>{{DOMAIN}}</span></div></div><a>{{BUSINESS_NAME}} · Carreleur à {{CITY}}</a><p>Carreleur à {{CITY}} : pose de carrelage, salle de bain, terrasse et extérieur. Devis clair, intervention soignée. Appelez-nous.</p></div>
+  <p class="bbs-h">Ce que ça change pour vous</p>
+  <ul class="bbs-k">
+   <li><b>Plus de demandes de devis</b>votre nom apparaît quand on cherche votre métier dans votre ville</li>
+   <li><b>Des appels directs</b>un bouton d'appel toujours visible sur téléphone, là où se font la plupart des recherches</li>
+   <li><b>Des devis acceptés plus facilement</b>un site soigné rassure avant même le premier rendez-vous, et l'on discute moins le prix d'un artisan qui inspire confiance</li>
+   <li><b>Aucun temps à y passer</b>textes, mise en ligne, nom de domaine et mises à jour : on s'occupe de tout</li>
+  </ul>
+  <div class="bbs-o"><div><b>Un seul chantier dans l'année suffit largement à le rentabiliser.</b><span>Tout est inclus : finitions avec vos photos, votre logo et vos couleurs, nom de domaine, hébergement, suivi. 14 jours d'essai, sans carte bancaire. Ensuite 29 € HT par mois, sans engagement.</span></div>
+   <a class="btn btn-p" href="https://biz-boost.fr/souscrire?ref={{SUB}}" data-cta="panel_bas">Activer mon site gratuitement</a><button type="button" class="btn btn-s" id="bbw-b" data-cta="want">Une question avant ? Écrivez-moi</button>
+   <form id="bbw" hidden><p class="bbw-t">Sans engagement : laissez-moi un moyen de vous joindre, je vous réponds personnellement.</p><input name="f" placeholder="Votre prénom" maxlength="60" autocomplete="given-name"><input name="c" placeholder="Votre téléphone ou votre email" maxlength="120" required><textarea name="m" placeholder="Un message ? (facultatif)" maxlength="1000" rows="2"></textarea><button class="btn btn-p" type="submit">Envoyer</button></form>
+   <p id="bbw-ok" class="bbw-t" hidden>Merci, c'est bien reçu. Je vous écris très vite.</p>
+   
+   <style>#bbw-b[hidden],#bbw[hidden],#bbw-ok[hidden]{display:none!important}#bbr{cursor:pointer}#bbw-b{width:100%}#bbw{margin-top:4px}#bbw input,#bbw textarea{display:block;width:100%;box-sizing:border-box;padding:12px 14px;margin:0 0 8px;border:1px solid #d6dae0;border-radius:10px;font:inherit;font-size:16px;background:#fff;color:#111}#bbw button{width:100%}.bbw-t{font-size:14px;line-height:1.5;margin:8px 0 10px;color:inherit}.bbw-a{display:block;text-align:center;margin-top:12px;font-size:14px;text-decoration:underline;color:inherit;opacity:.8}</style>
+   <script>(function(){var b=document.getElementById("bbw-b"),f=document.getElementById("bbw"),ok=document.getElementById("bbw-ok");if(!b||!f)return;b.addEventListener("click",function(){b.hidden=true;f.hidden=false;f.scrollIntoView({block:"center",behavior:"smooth"});var i=f.querySelector("input");if(i)setTimeout(function(){i.focus({preventScroll:true})},300)});var rb=document.getElementById("bbr"),ro=document.getElementById("bbro");if(rb&&ro)rb.addEventListener("click",function(e){if(e.target.closest("a"))return;if(!ro.contains(e.target))ro.click()});f.addEventListener("submit",function(e){e.preventDefault();var bt=f.querySelector("button");bt.disabled=true;var d={subdomain:"{{SUB}}",first_name:f.f.value.slice(0,60),contact:f.c.value.slice(0,120),message:f.m.value.slice(0,1000)};fetch("https://gdzlcxskuhupymyxywzm.supabase.co/rest/v1/bizboost_leads",{method:"POST",headers:{"Content-Type":"application/json",apikey:"sb_publishable_g8jVNOsNPCpAz61g34rKFQ_Z-TIXwsv",Prefer:"return=minimal"},body:JSON.stringify(d)}).then(function(r){f.hidden=true;ok.hidden=false;if(!r.ok)ok.textContent="Merci. Un petit souci technique : répondez simplement à mon email, je m'en occupe."}).catch(function(){f.hidden=true;ok.hidden=false;ok.textContent="Merci. Un petit souci technique : répondez simplement à mon email, je m'en occupe."})})})();</script>
+   <div class="bbs-sig" data-sig="v1"><span class="bbs-av" aria-hidden="true">Y</span><div><p class="bbs-sn">Younes, qui a préparé votre site</p><p class="bbs-st">Je l'ai préparé pour vous avant même de vous écrire, pour que vous puissiez juger sur pièce. Une question, une retouche ? Répondez simplement à mon email : c'est moi qui vous réponds.</p></div></div><style>.bbs-sig{display:flex;gap:12px;align-items:flex-start;margin-top:22px;padding-top:16px;border-top:1px solid var(--line)}.bbs-av{flex:none;width:42px;height:42px;border-radius:50%;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}.bbs-sn{margin:0 0 3px;font-weight:700;font-size:14.5px;color:var(--ink)}.bbs-st{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink2)}</style></div>
+ </aside>
+</div>
+<style>
+.mono{color:#fff!important}
+#bbr{position:relative;z-index:55;background:#111418;color:#e9ecf1;font-size:13.5px}
+#bbr .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:12px}
+#bbr span{display:flex;align-items:center;gap:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#bbr i{width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px rgba(255,255,255,.08);flex:none}
+#bbro{background:none;border:0;color:#fff;font:600 13.5px Inter,sans-serif;cursor:pointer;display:flex;gap:6px;align-items:center;white-space:nowrap}
+#bbro b{color:var(--acc);font-weight:600}
+body>#bbr{position:fixed;top:0;left:0;right:0}
+body{padding-top:42px}
+.hd{top:42px}
+#bbs{position:fixed;inset:0;z-index:100;pointer-events:none}
+.bbs-bg{position:absolute;inset:0;background:rgba(17,20,24,.42);opacity:0;transition:opacity .3s}
+.bbs-p{position:absolute;right:0;top:0;bottom:0;width:440px;max-width:100%;background:#fff;padding:34px 32px 30px;overflow:auto;transform:translateX(102%);transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:-30px 0 80px -30px rgba(0,0,0,.35)}
+#bbs.on{pointer-events:auto}#bbs.on .bbs-bg{opacity:1}#bbs.on .bbs-p{transform:none}
+.bbs-x{position:absolute;right:18px;top:16px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:20px;cursor:pointer;color:var(--ink2)}
+.bbs-p h3{font-size:27px;margin:14px 0 10px}
+.bbs-l{color:var(--ink2);font-size:15.5px}
+.gser{margin:22px 0;border:1px solid var(--line);border-radius:16px;padding:16px 18px;font-family:Arial,sans-serif}
+.gser small{display:block;font-size:12px;color:var(--ink3);margin-bottom:10px}
+.gser-u{display:flex;gap:10px;align-items:center}
+.gser-u .mono{width:28px;height:28px;border-radius:50%;font-size:13px}
+.gser-u b{display:block;font-size:14px;font-weight:400;color:#202124}
+.gser-u span{font-size:12px;color:#4d5156}
+.gser a{display:block;color:#1a0dab;font-size:19px;line-height:1.3;margin:8px 0 4px}
+.gser p{font-size:13.5px;color:#4d5156;line-height:1.5}
+.bbs-h{font:600 12.5px Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin:4px 0 14px}
+.bbs-k{list-style:none;display:grid;gap:14px;margin:0 0 24px}
+.bbs-k li{padding-left:30px;position:relative;font-size:14px;color:var(--ink2)}
+.bbs-k li:before{content:"";position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:50%;background:var(--acc-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111418' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat}
+.bbs-k b{display:block;color:var(--ink);font-size:15px}
+.cmp{margin:0 0 24px;border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:14px}
+.cmp div{display:grid;grid-template-columns:1fr 92px 92px;align-items:center;border-top:1px solid var(--line)}
+.cmp div:first-child{border-top:0;background:var(--bg2);font-weight:600;font-size:12.5px;color:var(--ink3);text-transform:uppercase;letter-spacing:.04em}
+.cmp span{padding:11px 14px}
+.cmp span+span{text-align:center;padding:11px 6px}
+.cmp .ko{color:#b4232a;font-weight:600}.cmp .ok{color:#137a3f;font-weight:600}
+.bbs-o{border-radius:18px;background:var(--bg2);padding:20px}
+.bbs-o b{display:block;font-size:16px}
+.bbs-o span{display:block;font-size:14px;color:var(--ink2);margin:4px 0 16px}
+.bbs-o .btn{width:100%}
+.bbs-q{font-size:13px;color:var(--ink3);margin-top:12px;text-align:center}
+@media (max-width:640px){#bbr{font-size:12.5px}#bbr .wrap{height:40px}#bbr span{display:none}#bbro{width:100%;justify-content:center;font-size:13px}body{padding-top:40px}.hd{top:40px}
+ .bbs-p{top:auto;left:0;width:100%;max-height:88vh;border-radius:24px 24px 0 0;transform:translateY(102%);padding:28px 22px 26px}}
+</style>
+<script>
+(function(){var s=document.getElementById("bbs"),o=document.getElementById("bbro");
+function op(){s.classList.add("on");s.setAttribute("aria-hidden","false");window.__bbev&&__bbev("panel","open")}
+function cl(){s.classList.remove("on");s.setAttribute("aria-hidden","true")}
+o.addEventListener("click",op);s.querySelectorAll("[data-close]").forEach(function(b){b.addEventListener("click",cl)});
+addEventListener("keydown",function(e){if(e.key==="Escape")cl()});
+document.body.insertBefore(document.getElementById("bbr"),document.body.firstChild);})();
+</script>
+<script>
+(function(){var S='{{SUB}}',U='https://gdzlcxskuhupymyxywzm.supabase.co/functions/v1/track-visit',sid=Math.random().toString(36).slice(2,12),t0=Date.now(),done={};
+function ev(e,v,rep){var k=e+'|'+(v||'');if(!rep&&done[k])return;done[k]=1;if(navigator.webdriver)return;var b=JSON.stringify({s:S,e:e,v:v==null?null:String(v),sid:sid,ms:Date.now()-t0,w:window.innerWidth});try{if(navigator.sendBeacon&&navigator.sendBeacon(U,new Blob([b],{type:'text/plain'})))return;fetch(U,{method:'POST',body:b,keepalive:true,mode:'no-cors'})}catch(x){}}
+window.__bbev=ev;ev('view');
+[10,30,60,120].forEach(function(s){setTimeout(function(){if(!document.hidden)ev('time',s)},s*1000)});
+addEventListener('scroll',function(){var h=document.documentElement,p=(h.scrollTop+innerHeight)/h.scrollHeight*100;[25,50,75,100].forEach(function(q){if(p>=q-2)ev('scroll',q)})},{passive:true});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a,button');if(!a)return;var h=a.getAttribute('href')||'';if(h.indexOf('souscrire')>-1)ev('cta',a.getAttribute('data-cta')||'page');else if(h.indexOf('tel:')===0)ev('tel');else if(a.getAttribute('data-track')==='quote')ev('quote')},true);})();
+</script>
+<script>
+(function(){var n="{{BUSINESS_NAME}}".trim(),m=document.querySelectorAll(".mono");if(n)m.forEach(function(e){e.textContent=n.charAt(0).toUpperCase()});var p="{{PHONE_RAW}}";if(!/^\+?\d{6,}/.test(p))document.documentElement.classList.add("no-phone");
+var h=document.getElementById("hd");addEventListener("scroll",function(){h.classList.toggle("sc",scrollY>8)},{passive:true});
+var io="IntersectionObserver"in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px"}):null;
+document.querySelectorAll(".rv").forEach(function(el){io?io.observe(el):el.classList.add("in")});
+var c="{{CITY}}",cm=c.match(/^(Le|Les) (.+)$/);if(cm){var a=cm[1]=="Le"?["au","Au","du"]:["aux","Aux","des"],r=function(s){return s.split("à "+c).join(a[0]+" "+cm[2]).split("À "+c).join(a[1]+" "+cm[2]).split(" de "+c).join(" "+a[2]+" "+cm[2])},w=document.createTreeWalker(document.body,4),t;while(t=w.nextNode()){if(t.nodeValue.indexOf(c)>-1)t.nodeValue=r(t.nodeValue)}document.title=r(document.title)}
+var L=document.querySelector("img.logo");if(L){var nf=function(x){return x.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")},f=nf(decodeURIComponent((L.getAttribute("src")||"").split("?")[0].split("/").pop())).replace(/\.(png|jpe?g|webp|svg)$/,""),nm=nf("{{BUSINESS_NAME}}").split(/[^a-z0-9]+/).filter(function(x){return x.length>=4}),rest=f.replace(/logo|site|header|main|default|final|cropped|copie|copy|scaled|small|large|white|blanc|noir|black|couleur|color|retina|transparent|web|new|nouveau/g,"").replace(/[^a-z]/g,"");if(rest.length>2&&!nm.some(function(t){return f.indexOf(t)>-1})){var sp=document.createElement("span");sp.className="mono";sp.textContent="{{BUSINESS_NAME}}".trim().charAt(0).toUpperCase();L.replaceWith(sp)}}
+})();
+</script>
+<script>(function(){var l=document.querySelector('p.lead');if(!l)return;var t=l.textContent.trim();if(t.length<=300)return;var c=t.slice(0,300),i=Math.max(c.lastIndexOf('. '),c.lastIndexOf('! '),c.lastIndexOf('? '));if(i>80)l.textContent=c.slice(0,i+1);})();</script><script data-nbsp="v1">(function(){function f(){var w=document.createTreeWalker(document.body,4),n;while(n=w.nextNode()){var t=n.nodeValue;if(t.indexOf("«")>-1||t.indexOf("»")>-1){n.nodeValue=t.replace(/« /g,"« ").replace(/ »/g," »");}var u=n.nodeValue;if(/\d (h\/24|j\/7|€|%)/.test(u)){n.nodeValue=u.replace(/(\d) (?=h\/24|j\/7|€|%)/g,"$1 ");}}}f();setTimeout(f,1500);})();</script><script data-cx="v1">
+(function(){var d=document,R=matchMedia('(prefers-reduced-motion: reduce)').matches;d.documentElement.classList.add('cx-js');
+var S=[].slice.call(d.querySelectorAll('[data-cx]')),vh=innerHeight,q=0;
+function c(x){return x<0?0:x>1?1:x}
+function t(){q=0;for(var i=0;i<S.length;i++){var e=S[i],r=e.getBoundingClientRect(),m=e.getAttribute('data-cx'),p;
+ if(r.bottom<-vh||r.top>vh*2)continue;
+ if(m==='pin')p=c(-r.top/Math.max(1,e.offsetHeight-vh));else if(m==='out')p=c(-r.top/Math.max(1,r.height));else p=c((vh-r.top)/(vh+r.height));
+ e.style.setProperty('--p',p.toFixed(4))}}
+function k(){if(!q){q=1;requestAnimationFrame(t)}}
+if(!R){addEventListener('scroll',k,{passive:true});addEventListener('resize',function(){vh=innerHeight;k()});t()}
+var io='IntersectionObserver'in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'}):null;
+[].forEach.call(d.querySelectorAll('.cv'),function(e){io?io.observe(e):e.classList.add('in')});
+var v=d.querySelector('.cx-vid'),cn=navigator.connection;
+if(v&&!R&&innerWidth<=820&&!(cn&&(cn.saveData||/2g/.test(cn.effectiveType||'')))){addEventListener('load',function(){setTimeout(function(){v.src=v.getAttribute('data-src');v.addEventListener('playing',function(){v.classList.add('on')},{once:true});var pr=v.play();pr&&pr.catch&&pr.catch(function(){})},600)});
+ if(io){new IntersectionObserver(function(es){es.forEach(function(e){if(!v.src)return;e.isIntersecting?v.play().catch(function(){}):v.pause()})}).observe(v)}}
+var f=d.querySelector('.cx-ba-f');if(f){var drag=function(ev){var r=f.getBoundingClientRect(),x=(ev.touches?ev.touches[0].clientX:ev.clientX);f.style.setProperty('--q',c((x-r.left)/r.width).toFixed(3))};f.addEventListener('pointerdown',function(e){drag(e);f.setPointerCapture&&f.setPointerCapture(e.pointerId);f.onpointermove=drag});f.addEventListener('pointerup',function(){f.onpointermove=null})}
+})();
+</script></body>
+</html>
