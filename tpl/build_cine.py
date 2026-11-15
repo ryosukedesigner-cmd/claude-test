@@ -283,7 +283,7 @@ html:not(.cx-js) .cv{opacity:1;transform:none}
 @media (max-width:640px){
  .cx-hero{min-height:560px}
  .cx-hero h1{font-size:clamp(42px,12.5vw,58px);margin:14px 0 14px}
- .cx-hero .lead{font-size:16px}
+ .cx-hero .lead{font-size:16px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
  .cx-hero-c{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
  .cx-hero .cta{gap:10px;margin-top:22px}.cx-hero .cta .btn{height:50px}
  .cx-hero .cta .btn-s{display:inline-flex}
